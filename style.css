@@ -40,9 +40,8 @@ img{
     padding: 8px;
 }
 
-#listepair{
-    background-color: #F2F2F2;
-}
+tr:nth-child(2n) 
+{background-color: #F2F2F2;}
 
 #liste tr:hover{
     background-color: #DDDDDD;
