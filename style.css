@@ -20,7 +20,7 @@ p{
     margin-left: 50px;
 }
 
-.presentation{
+#presentation{
     margin-left: 50px;
 }
 
@@ -29,27 +29,27 @@ img{
     width: 400px;
 }
 
-.liste, table{
+#liste table{
     border-collapse: collapse;
     width: 400px;
     margin: 50px;
 }
 
-.liste, td{
-    border: 1px, solid, #ddd;
+#liste tr,td{
+    border: 1px solid #ddd;
     padding: 8px;
 }
 
-.listepair{
-    background-color: #a1a1a1e8;
+#listepair{
+    background-color: #F2F2F2;
 }
 
-.liste, tr:hover{
+#liste tr:hover{
     background-color: #DDDDDD;
 }
 
-.liste, th{
-    padding: 12px, 8px, 20px, 8px;
+#liste th{
+    padding: 12px 8px 20px 8px;
     text-align: left;
     background-color: #ff715b;
     color: white;
