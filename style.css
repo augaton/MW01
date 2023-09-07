@@ -29,6 +29,28 @@ img{
     width: 400px;
 }
 
-ul, ol{
-    margin-left: 100px;
+.liste, table{
+    border-collapse: collapse;
+    width: 400px;
+    margin: 50px;
+}
+
+.liste, td{
+    border: 1px, solid, #ddd;
+    padding: 8px;
+}
+
+.listepair{
+    background-color: #a1a1a1e8;
+}
+
+.liste, tr:hover{
+    background-color: #DDDDDD;
+}
+
+.liste, th{
+    padding: 12px, 8px, 20px, 8px;
+    text-align: left;
+    background-color: #ff715b;
+    color: white;
 }
