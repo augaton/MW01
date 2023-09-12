@@ -53,3 +53,25 @@ tr:nth-child(2n)
     background-color: #ff715b;
     color: white;
 }
+
+section#message{
+    width: 400px;
+    margin: 100px auto 0px auto;
+
+}
+
+section#message label,input,select{
+    width: 100px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4C5454;
+    font-size: 16px;
+}
+
+section#message input,select{
+    background-color: #FF715B;
+    border: 1px solid  #4C5454;
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+}
