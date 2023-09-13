@@ -1,0 +1,30 @@
+header {
+    grid-area: entete;
+    border: 1px solid grey;
+}
+nav {
+    grid-area: navigation;
+    border: 1px solid grey;
+}
+section {
+    grid-area: principale;
+    border: 1px solid grey;
+}
+aside {
+    grid-area: liens;
+    border: 1px solid grey;
+}
+footer {
+    grid-area: pied;
+    border: 1px solid grey;
+}
+body {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "entete entete"
+    "navigation navigation" 
+    "principale liens"
+    "pied pied";
+    grid-template-rows: 150px 40px minmax(400px, auto) auto;
+    grid-template-columns: 1fr 25%;
+}
