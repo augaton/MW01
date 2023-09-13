@@ -61,7 +61,8 @@ section#message{
 }
 
 section#message label,input,select{
-    width: 100px;
+    display: block;
+    width: 100%;
     padding: 0px;
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
@@ -74,4 +75,9 @@ section#message input,select{
     border: 1px solid  #4C5454;
     border-radius: 5px;
     padding: 5px 0px 5px 0px;
+}
+
+section#message label, #submit{
+    margin-top: 30px;
+
 }
