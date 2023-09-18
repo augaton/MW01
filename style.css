@@ -4,6 +4,81 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     color: #4C5454;
+
+    display: grid;
+    width: 100%;
+    grid-template-areas: "entete entete"
+    "navigation navigation" 
+    "principale liens"
+    "pied pied";
+    grid-template-rows: 150px 40px minmax(400px, auto) auto;
+    grid-template-columns: 1fr 25%;
+}
+
+header{
+    grid-area: entete;
+    background-color: #FF715B;
+    color: white;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav{
+    grid-area: navigation;
+    background-color: #FF715B;
+    padding: 0px 20px 0px 20px;
+    color: white;
+}
+
+nav p{
+    grid-area: principale;
+    margin: 10px;
+}
+
+nav span{
+    cursor: pointer;
+    padding: 0px 30px 0px 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav span:hover{
+    border-bottom: 2px solid white;
+    transition-duration: 0.3s;
+}
+
+section#cv{
+    padding: 10px;
+}
+
+aside{
+    grid-area: liens;
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: black;
+    background: linear-gradient(#FF715B, white, #FF715B);
+    border-radius: 10px;
+}
+
+footer{
+    grid-area: pied;
+    background-color: #FF715B;
+    color: white;
+    text-align: center;
+}
+
+footer h1{
+    font-size: 22px;
+}
+
+footer:link{
+    color: white;
 }
 
 h1{
