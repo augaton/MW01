@@ -15,6 +15,11 @@ body{
     grid-template-columns: 1fr 25%;
 }
 
+img#hamburger{
+    width: 80px;
+    float: right;
+}
+
 header{
     grid-area: entete;
     background-color: #FF715B;
@@ -154,5 +159,18 @@ section#message input,select{
 
 section#message label, #submit{
     margin-top: 30px;
+
+}
+
+@media screen{
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px auto auto auto;
+    }
+
+    aside{
+        display: none; 
+    }
 
 }
