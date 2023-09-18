@@ -162,7 +162,7 @@ section#message label, #submit{
 
 }
 
-@media screen{
+@media screen  and (orientation: portrait){
     body{
         display: grid;
         grid-template-columns: 100%;
@@ -171,6 +171,39 @@ section#message label, #submit{
 
     aside{
         display: none; 
+    }
+
+    img#armand{
+        display: block;
+        width: 80%;
+        margin: 5px auto 5px auto;
+        float: none;
+    }
+
+    section{
+        margin: 0px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    section#presentation h1,h2,p{
+        margin: 0px;
+    }
+
+    section#presentation ul,ol{
+        padding-left: 25px;
+    }
+
+
+    #liste table{
+        width: 100%;
+        margin: 0px;
+    }
+
+
+    section#message{
+        width: 300px;
+        margin: 0px auto 0px auto;
+    
     }
 
 }
