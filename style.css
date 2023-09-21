@@ -3,7 +3,8 @@ body{
     padding: 0px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
-    color: #4C5454;
+    color: #363636;
+    background-color: #f3f2f2;
 
     display: grid;
     width: 100%;
@@ -11,13 +12,14 @@ body{
     "navigation navigation" 
     "principale liens"
     "pied pied";
-    grid-template-rows: 150px 40px minmax(400px, auto) auto;
-    grid-template-columns: 1fr 25%;
+    grid-template-rows: 150px 40px minmax(651px, auto) auto;
+    grid-template-columns: 1fr 15%;
 }
 
 img#hamburger{
     width: 80px;
     float: right;
+    display: none;
 }
 
 header{
@@ -64,18 +66,24 @@ section#cv{
 aside{
     grid-area: liens;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     font-size: 12px;
     color: black;
     background: linear-gradient(#FF715B, white, #FF715B);
     border-radius: 10px;
 }
 
+aside:link{
+    color: black;
+}
+
+
 footer{
     grid-area: pied;
     background-color: #FF715B;
     color: white;
     text-align: center;
+    height: auto;
 }
 
 footer h1{
@@ -163,10 +171,15 @@ section#message label, #submit{
 
 }
 
+br{
+    display: none;
+}
+
+
 @media screen  and (orientation: portrait){
     body{
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         grid-template-rows: 100px auto auto auto;
     }
 
@@ -174,11 +187,19 @@ section#message label, #submit{
         display: none; 
     }
 
+    br{
+        display: block;
+    }
+
     img#armand{
         display: block;
         width: 80%;
         margin: 5px auto 5px auto;
         float: none;
+    }
+
+    img#hamburger{
+        display: block;
     }
 
     section{

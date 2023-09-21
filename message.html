@@ -10,38 +10,58 @@
             <form>
                 <label for="room-select">Sélectionner un afficheur : </label>
                     <select id="room-select" name="select">
-                    <option value="CPA">CP A</option>
-                    <option value="CPB">CP B</option>
-                    <option value="CE1A">CE1 A</option>
-                    <option value="CE1B">CE1 B</option>
-                    <option value="CM1A">CM1 A</option>
-                    <option value="CM1B">CM1 B</option>
-                    <option value="CM2A">CM1 B</option>
-                    <option value="CM2B">CM1 B</option>
+                    <option value="172.20.21.230">CP A</option>
+                    <option value="172.20.21.231">CP B</option>
+                    <option value="172.20.21.232">CE1 A</option>
+                    <option value="172.20.21.233">CE1 B</option>
+                    <option value="172.20.21.234">CE2 A</option>
+                    <option value="172.20.21.235">CE2 B</option>
+                    <option value="172.20.21.236">CM1 A</option>
+                    <option value="172.20.21.237">CM1 B</option>
+                    <option value="172.20.21.238">CM2 A</option>
+                    <option value="172.20.21.239">CM2 B</option>
                 </select>
 
-                <label for="effect-select">Sélectionner l'effet d'apparition : </label>
-                    <select id="effect-select" name="select">
-                    <option value="FE">Scroll a droite</option>
+                <label for="select-effetapparition">Sélectionner l'effet d'apparition : </label>
+                <select id="select-effetapparition" name="effetapparition">
+                    <option value="FE" selected>Scroll a droite</option>
+                    <option value="FF">Scroll a gauche</option>
+                    <option value="FI">Scroll en haut</option>
+                    <option value="FJ">Scroll en bas</option>
                 </select>
-                <label for="show-select">Sélectionner l'effet d'affichage : </label>
-                    <select id="show-select" name="select">
-                    <option value="MA">Rapide</option>
+
+                <label for="select-effetaffichage">Sélectionner l'effet d'affichage : </label>
+                <select id="select-effetaffichage" name="effetaffichage">
+                    <option value="MA">Rapide Normal</option>
+                    <option value="MB">Rapide Clignotant</option>
+                    <option value="MQ">Moyennement Rapide Normal</option>
+                    <option value="MR">Moyennement Rapide Clignotant</option>
+                    <option value="Ma">Moyennement Lent Normal</option>
+                    <option value="Mb">Moyennement Lent Clignotant</option>
+                    <option value="Mq">Lent Normal</option>
+                    <option value="Mr">Lent Clignotant</option>
                 </select>
-                <label for="time-select">Sélectionner le temps d'affichage : </label>
-                    <select id="time-select" name="select">
-                    <option value="WC">CP A</option>
+
+                <label for="effetaffichage">Sélectionner le temps d'affichage : </label>
+                <select id="effetaffichage" name="dureeaffichage">
+                    <option value="WA" >0.5 Secondes</option>
+                    <option value="WB" >1 Secondes</option>
+                    <option value="WC" selected>2 Secondes</option>
+                    <option value="WD" >3 Secondes</option>
                 </select>
-                <label for="remove-select">Sélectionner l'effet de disparition : </label>
-                    <select id="remove-select" name="select">
-                    <option value="FE">2 Secondes</option>
+
+                <label for="select-effetdisparition">Sélectionner l'effet de disparition : </label>
+                <select id="select-effetdisparition" name="effetdisparition">
+                    <option value="FE" selected>Scroll a droite</option>
+                    <option value="FF">Scroll a gauche</option>
+                    <option value="FI">Scroll en haut</option>
+                    <option value="FJ">Scroll en bas</option>
                 </select>
 
                 <label for="pseudo-select">Indiquer le message : </label>
                 <input type="text" id="pseudo-select" name="message">
                 <input type="submit" id="submit" value="Envoyer">
             </form>
-            <!-- Le code HTML du formulaire -->
         </section>
     </body>
 </html>
