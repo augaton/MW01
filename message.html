@@ -7,10 +7,10 @@
     </head>
     <body>
         <section id="message">
-            <form>
+            <form method="post" action="rest.php">
                 <label for="room-select">Sélectionner un afficheur : </label>
-                    <select id="room-select" name="select">
-                    <option value="172.20.21.230">CP A</option>
+                <select id="room-select" name="journal">
+                    <option value="172.20.21.158">CP A</option>
                     <option value="172.20.21.231">CP B</option>
                     <option value="172.20.21.232">CE1 A</option>
                     <option value="172.20.21.233">CE1 B</option>
@@ -24,22 +24,44 @@
 
                 <label for="select-effetapparition">Sélectionner l'effet d'apparition : </label>
                 <select id="select-effetapparition" name="effetapparition">
+                    <option value="FA" >Immediat</option>
+                    <option value="FB" >XOpen</option>
+                    <option value="FC" >Rideau en haut</option>
+                    <option value="FD" >Rideau en bas</option>
                     <option value="FE" selected>Scroll a droite</option>
                     <option value="FF">Scroll a gauche</option>
+                    <option value="FG">VOpen</option>
+                    <option value="FH">VClose</option>
                     <option value="FI">Scroll en haut</option>
                     <option value="FJ">Scroll en bas</option>
+                    <option value="FJ">Maintenir</option>
                 </select>
 
                 <label for="select-effetaffichage">Sélectionner l'effet d'affichage : </label>
                 <select id="select-effetaffichage" name="effetaffichage">
                     <option value="MA">Rapide Normal</option>
                     <option value="MB">Rapide Clignotant</option>
+                    <option value="MC">Jouer son 1</option>
+                    <option value="MD">Jouer son 2</option>
+                    <option value="ME">Jouer son 3</option>
+
                     <option value="MQ">Moyennement Rapide Normal</option>
                     <option value="MR">Moyennement Rapide Clignotant</option>
+                    <option value="MS">Jouer son 1</option>
+                    <option value="MT">Jouer son 2</option>
+                    <option value="MU">Jouer son 3</option>
+
                     <option value="Ma">Moyennement Lent Normal</option>
                     <option value="Mb">Moyennement Lent Clignotant</option>
+                    <option value="Mc">Jouer son 1</option>
+                    <option value="Md">Jouer son 2</option>
+                    <option value="Me">Jouer son 3</option>
+
                     <option value="Mq">Lent Normal</option>
                     <option value="Mr">Lent Clignotant</option>
+                    <option value="Ms">Jouer son 1</option>
+                    <option value="Mt">Jouer son 2</option>
+                    <option value="Mu">Jouer son 3</option>
                 </select>
 
                 <label for="effetaffichage">Sélectionner le temps d'affichage : </label>
@@ -52,15 +74,23 @@
 
                 <label for="select-effetdisparition">Sélectionner l'effet de disparition : </label>
                 <select id="select-effetdisparition" name="effetdisparition">
+                    <option value="FA" >Immediat</option>
+                    <option value="FB" >XOpen</option>
+                    <option value="FC" >Rideau en haut</option>
+                    <option value="FD" >Rideau en bas</option>
                     <option value="FE" selected>Scroll a droite</option>
                     <option value="FF">Scroll a gauche</option>
+                    <option value="FG">VOpen</option>
+                    <option value="FH">VClose</option>
                     <option value="FI">Scroll en haut</option>
                     <option value="FJ">Scroll en bas</option>
+                    <option value="FJ">Maintenir</option>
                 </select>
 
                 <label for="pseudo-select">Indiquer le message : </label>
-                <input type="text" id="pseudo-select" name="message">
-                <input type="submit" id="submit" value="Envoyer">
+                <input type="text" id="pseudo-select" name="texte">
+
+                <input type="submit" value="Envoyer">
             </form>
         </section>
     </body>
